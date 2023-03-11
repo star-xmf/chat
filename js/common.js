@@ -9,3 +9,5 @@ function $$(selector) {
 function $$$(tagName) {
   return document.createElement(tagName);
 }
+
+const Base_Url = "/chat/";

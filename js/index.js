@@ -5,7 +5,7 @@
   const user = resp.data;
   if (!user) {
     alert(resp.msg + "，请重新登录");
-    location.href = "../login.html";
+    location.href = Base_Url + "login.html";
     return;
   }
 
@@ -31,7 +31,7 @@
   // 点击X关闭页面，注销事件
   doms.close.onclick = function () {
     API.loginOut();
-    location.href = "../login.html";
+    location.href = Base_Url + "/login.html";
   };
 
   // 加载聊天历史记录

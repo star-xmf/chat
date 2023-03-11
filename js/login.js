@@ -25,7 +25,7 @@ form.onsubmit = async function (e) {
   const resp = await API.login(data);
   if (resp.code === 0) {
     alert("登录成功，点击确定，跳转到首页");
-    location.href = "../index.html";
+    location.href = Base_Url + "index.html";
   } else {
     loginIdValidator.p.innerText = "账号或密码错误，请重新输入";
     loginPwdValidator.input.value = "";
