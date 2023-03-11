@@ -10,4 +10,4 @@ function $$$(tagName) {
   return document.createElement(tagName);
 }
 
-const Base_Url = "/chat/js/";
+const Base_Url = "/chat/";
